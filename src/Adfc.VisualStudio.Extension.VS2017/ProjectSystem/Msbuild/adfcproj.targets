@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ProjectCapability Include="AdfcProject" />
+    <ProjectCapability Include="OpenProjectFile" />
+    <ProjectCapability Include="HandlesOwnReload" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PropertyPageSchema Include="
+                        $(MSBuildThisFileDirectory)ConfigurationGeneral.xaml;
+                        ">
+        <Context>Project</Context>
+    </PropertyPageSchema>
+    <PropertyPageSchema Include="
+                        $(MSBuildThisFileDirectory)ProjectItemsSchema.xaml;
+                        ">
+    </PropertyPageSchema>
+
+    <PropertyPageSchema Include="$(MSBuildThisFileDirectory)SourceControl.xaml">
+      <Context>Invisible</Context>
+    </PropertyPageSchema>
+
+    <PropertyPageSchema Include="
+                        $(MSBuildThisFileDirectory)Folder.xaml;
+                        $(MSBuildThisFileDirectory)None.xaml;
+                        ">
+      <Context>File;BrowseObject</Context>
+    </PropertyPageSchema>
+
+    <PropertyPageSchema Include="
+                        $(MSBuildThisFileDirectory)ConfigurationGeneralFile.xaml;
+                        ">
+      <Context>File</Context>
+    </PropertyPageSchema>
+    <PropertyPageSchema Include="
+                        $(MSBuildThisFileDirectory)ConfigurationGeneralBrowseObject.xaml;
+                        ">
+      <Context>BrowseObject</Context>
+    </PropertyPageSchema>
+  </ItemGroup>
+
+  <Import Project="$(MSBuildProjectFullPath).user" Condition="Exists('$(MSBuildProjectFullPath).user')" />
+</Project>

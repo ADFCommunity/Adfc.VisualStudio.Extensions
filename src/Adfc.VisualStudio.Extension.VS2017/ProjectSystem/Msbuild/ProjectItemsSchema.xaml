@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectSchemaDefinitions
+    xmlns="http://schemas.microsoft.com/build/2009/properties">
+
+    <ContentType
+        Name="Text"
+        DisplayName="Text file"
+        ItemType="Content">
+    </ContentType>
+
+    <ContentType
+        Name="Json"
+        DisplayName="Json file"
+        ItemType="Content">
+    </ContentType>
+
+    <ItemType Name="None" DisplayName="None"/>
+    <ItemType Name="Content" DisplayName="Content" />
+
+    <FileExtension Name=".txt" ContentType="Text" />
+    <FileExtension Name=".json" ContentType="Json" />
+</ProjectSchemaDefinitions>

@@ -4,7 +4,7 @@ using System.ComponentModel.Composition;
 
 namespace Adfc.VisualStudio.Extension.VS2017.ProjectSystem
 {
-    internal class ProjectProperties : StronglyTypedPropertyAccess
+    internal partial class ProjectProperties : StronglyTypedPropertyAccess
     {
         [ImportingConstructor]
         protected ProjectProperties(ConfiguredProject configuredProject)
