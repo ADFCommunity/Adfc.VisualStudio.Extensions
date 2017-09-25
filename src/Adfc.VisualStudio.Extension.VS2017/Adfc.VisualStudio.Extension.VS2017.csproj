@@ -206,6 +206,15 @@
       <SubType>Designer</SubType>
     </XamlPropertyRule>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Adfc.VisualStudio.Template.Json\Adfc.VisualStudio.Template.Json.csproj">
+      <Project>{B4C58F67-DC2A-4773-A6C7-D119D50CC009}</Project>
+      <Name>Adfc.VisualStudio.Template.Json</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
