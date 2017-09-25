@@ -51,6 +51,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="NuGet\NuGetRestoreSolutionEvents.cs" />
     <Compile Include="ProjectSystem\AdfcProject.cs" />
     <Compile Include="ProjectSystem\AdfcProjectBuildConfiguration.cs" />
     <Compile Include="ProjectSystem\ProjectProperties.cs" />

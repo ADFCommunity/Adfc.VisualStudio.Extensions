@@ -9,6 +9,7 @@ using Microsoft.VisualStudio.OLE.Interop;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 using Microsoft.Win32;
+using Adfc.VisualStudio.Extension.VS2017.NuGet;
 
 namespace Adfc.VisualStudio.Extension.VS2017
 {
@@ -33,12 +34,16 @@ namespace Adfc.VisualStudio.Extension.VS2017
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About
     [Guid(VSPackage.PackageGuidString)]
     [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
+    [ProvideAutoLoad(UIContextGuids80.NoSolution)]
     public sealed class VSPackage : Package
     {
         /// <summary>
         /// VSPackage GUID string.
         /// </summary>
         public const string PackageGuidString = "0e95a1d5-5f56-4b61-bfb4-3d6c9c276d43";
+
+        private NuGetRestoreSolutionEvents nuGetRestoreSolutionEvents = new NuGetRestoreSolutionEvents();
+        private uint nuGetRestoreSolutionEventsCookie = 0;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="VSPackage"/> class.
@@ -60,6 +65,26 @@ namespace Adfc.VisualStudio.Extension.VS2017
         protected override void Initialize()
         {
             base.Initialize();
+
+            var solution = GetService(typeof(SVsSolution)) as IVsSolution;
+            if (solution != null)
+            {
+                solution.AdviseSolutionEvents(nuGetRestoreSolutionEvents, out nuGetRestoreSolutionEventsCookie);
+            }
+        }
+
+        protected override int QueryClose(out bool canClose)
+        {
+            if (nuGetRestoreSolutionEventsCookie != 0)
+            {
+                var solution = GetService(typeof(SVsSolution)) as IVsSolution;
+                if (solution != null)
+                {
+                    solution.UnadviseSolutionEvents(nuGetRestoreSolutionEventsCookie);
+                }
+            }
+
+            return base.QueryClose(out canClose);
         }
 
         #endregion
