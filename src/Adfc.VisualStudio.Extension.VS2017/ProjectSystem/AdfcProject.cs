@@ -1,13 +1,14 @@
 ﻿using Microsoft.VisualStudio.ProjectSystem;
 using Microsoft.VisualStudio.ProjectSystem.VS;
 using Microsoft.VisualStudio.Shell.Interop;
+using System;
 using System.ComponentModel.Composition;
 
 namespace Adfc.VisualStudio.Extension.VS2017.ProjectSystem
 {
     [Export]
     [AppliesTo(UniqueCapability)]
-    [ProjectTypeRegistration(ProjectGuid,
+    [ProjectTypeRegistration(ProjectGuidString,
       "ADF Community Project",
       "Data Factory (*.adfcproj);*.adfcproj",
       "adfcproj",
@@ -17,7 +18,9 @@ namespace Adfc.VisualStudio.Extension.VS2017.ProjectSystem
     {
         internal const string UniqueCapability = "AdfcProject";
 
-        internal const string ProjectGuid = "1cb5cf53-4394-4cd2-9deb-9cb709f77ed2";
+        internal const string ProjectGuidString = "1cb5cf53-4394-4cd2-9deb-9cb709f77ed2";
+
+        internal static readonly Guid ProjectGuid = Guid.Parse(ProjectGuidString);
 
         [ImportingConstructor]
         public AdfcProject(UnconfiguredProject unconfiguredProject)
