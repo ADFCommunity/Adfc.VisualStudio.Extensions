@@ -1,0 +1,41 @@
+﻿{
+  "$schema": "http://datafactories.schema.management.azure.com/schemas/2015-09-01/Microsoft.DataFactory.Pipeline.json",
+  "name": "CopyPipeline",
+  "properties": {
+    "description": "Copy file sample",
+    "activities": [
+      {
+        "name": "CopyActivity",
+        "type": "Copy",
+        "inputs": [
+          {
+            "name": "InputDataset"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "OutputDataset"
+          }
+        ],
+        "typeProperties": {
+          "source": {
+            "type": "BlobSource"
+          },
+          "sink": {
+            "type": "BlobSink"
+          }
+        },
+        "Policy": {
+          "concurrency": 1,
+          "executionPriorityOrder": "OldestFirst",
+          "style": "StartOfInterval",
+          "retry": 0,
+          "timeout": "01:00:00"
+        }
+      }
+    ],
+    "start": "2017-01-01T00:00:00Z",
+    "end": "2017-01-02T00:00:00Z",
+    "isPaused": false
+  }
+}
