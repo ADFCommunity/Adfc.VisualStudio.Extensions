@@ -5,6 +5,6 @@
     <ProjectGuid>75924cad-2f7f-4936-99f7-e80f6a6e60e5</ProjectGuid>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="SampleConfig.json" />
+    <Json Include="SampleConfig.json" />
   </ItemGroup>
 </Project>

@@ -24,6 +24,7 @@
     <PropertyPageSchema Include="
                         $(MSBuildThisFileDirectory)Folder.xaml;
                         $(MSBuildThisFileDirectory)None.xaml;
+                        $(MSBuildThisFileDirectory)Json.xaml;
                         ">
       <Context>File;BrowseObject</Context>
     </PropertyPageSchema>
