@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adfc.VisualStudio.Extension
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adfc.VisualStudio.Template.Json", "src\Adfc.VisualStudio.Template.Json\Adfc.VisualStudio.Template.Json.csproj", "{B4C58F67-DC2A-4773-A6C7-D119D50CC009}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adfc.VisualStudio.Template.Project", "src\Adfc.VisualStudio.Template.Project\Adfc.VisualStudio.Template.Project.csproj", "{81776242-2FEF-43C4-BEE9-CEC622E84DC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B4C58F67-DC2A-4773-A6C7-D119D50CC009}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4C58F67-DC2A-4773-A6C7-D119D50CC009}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4C58F67-DC2A-4773-A6C7-D119D50CC009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81776242-2FEF-43C4-BEE9-CEC622E84DC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81776242-2FEF-43C4-BEE9-CEC622E84DC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81776242-2FEF-43C4-BEE9-CEC622E84DC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81776242-2FEF-43C4-BEE9-CEC622E84DC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,6 @@
 {
   "$schema": "http://datafactories.schema.management.azure.com/vsschemas/V1/Microsoft.DataFactory.Config.json",
-  "AzureStorageLinkedService": [
+  "AzureStorageLinkedService.json": [
     {
       "name": "$.properties.typeProperties.connectionString",
       "value": "<KeyVault:ProdStorageConnectionString>"

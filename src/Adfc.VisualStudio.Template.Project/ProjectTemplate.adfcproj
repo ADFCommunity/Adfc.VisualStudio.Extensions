@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <PropertyGroup>
+    <AdfcProjectImportPath>$(MSBuildExtensionsPath)\ADFCommunity\VS15\AdfcProj\</AdfcProjectImportPath>
+  </PropertyGroup>
+  <Import Project="$(AdfcProjectImportPath)\adfcproj.props" Condition="Exists('$(AdfcProjectImportPath)\adfcproj.props')"/>
+  <ItemGroup>
+    <PackageReference Include="Adfc.Msbuild" Version="0.1.3-preview" />
+  </ItemGroup>
+  <Import Project="$(AdfcProjectImportPath)\adfcproj.targets" Condition="Exists('$(AdfcProjectImportPath)\adfcproj.targets')"/>
+</Project>
