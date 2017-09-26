@@ -130,6 +130,10 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="Resources\VSPackage.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -225,6 +229,13 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <VSIXSourceItem Include="ProjectSystem\Msbuild\**">
+      <Visible>false</Visible>
+      <InstallRoot>MSBuild</InstallRoot>
+      <VSIXSubPath>ADFCommunity\VS15\AdfcProj</VSIXSubPath>
+    </VSIXSourceItem>
+  </ItemGroup>
   <ItemDefinitionGroup>
     <XamlPropertyRule>
       <Namespace>$(RootNamespace).ProjectSystem</Namespace>
