@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adfc.VisualStudio.Extension.VS2017", "src\Adfc.VisualStudio.Extension.VS2017\Adfc.VisualStudio.Extension.VS2017.csproj", "{2DEC9B7D-CB79-4E83-9EB0-1CE318C77375}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adfc.VisualStudio.Template.Json", "src\Adfc.VisualStudio.Template.Json\Adfc.VisualStudio.Template.Json.csproj", "{B4C58F67-DC2A-4773-A6C7-D119D50CC009}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adfc.VisualStudio.Template.Items", "src\Adfc.VisualStudio.Template.Items\Adfc.VisualStudio.Template.Items.csproj", "{B4C58F67-DC2A-4773-A6C7-D119D50CC009}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adfc.VisualStudio.Template.Project", "src\Adfc.VisualStudio.Template.Project\Adfc.VisualStudio.Template.Project.csproj", "{81776242-2FEF-43C4-BEE9-CEC622E84DC9}"
 EndProject
