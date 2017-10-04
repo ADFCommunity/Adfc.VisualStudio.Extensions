@@ -12,8 +12,8 @@
     <ProjectGuid>{B4C58F67-DC2A-4773-A6C7-D119D50CC009}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Adfc.VisualStudio.Template.Json</RootNamespace>
-    <AssemblyName>Adfc.VisualStudio.Template.Json</AssemblyName>
+    <RootNamespace>Adfc.VisualStudio.Template.Items</RootNamespace>
+    <AssemblyName>Adfc.VisualStudio.Template.Items</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
@@ -59,6 +59,10 @@
   <ItemGroup>
     <None Include="file.json" />
     <None Include="Adfc.VisualStudio.Template.Json.ico" />
+    <None Include="Pipeline.json" />
+    <None Include="Config.json" />
+    <None Include="Dataset.json" />
+    <None Include="LinkedService.json" />
   </ItemGroup>
   <ItemGroup>
     <VSTemplate Include="Adfc.VisualStudio.Template.Json.vstemplate" />
@@ -67,6 +71,20 @@
     <PackageReference Include="Microsoft.VSSDK.BuildTools">
       <Version>15.1.192</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="Linked Service.vstemplate">
+      <VSIXSubPath>Linked Service</VSIXSubPath>
+    </VSTemplate>
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="Dataset.vstemplate" />
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="Pipeline.vstemplate" />
+  </ItemGroup>
+  <ItemGroup>
+    <VSTemplate Include="Config.vstemplate" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />

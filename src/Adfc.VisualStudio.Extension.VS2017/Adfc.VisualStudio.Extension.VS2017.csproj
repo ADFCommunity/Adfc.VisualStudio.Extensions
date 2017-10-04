@@ -212,9 +212,9 @@
     </XamlPropertyRule>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Adfc.VisualStudio.Template.Json\Adfc.VisualStudio.Template.Json.csproj">
+    <ProjectReference Include="..\Adfc.VisualStudio.Template.Items\Adfc.VisualStudio.Template.Items.csproj">
       <Project>{B4C58F67-DC2A-4773-A6C7-D119D50CC009}</Project>
-      <Name>Adfc.VisualStudio.Template.Json</Name>
+      <Name>Adfc.VisualStudio.Template.Items</Name>
       <VSIXSubPath>ItemTemplates</VSIXSubPath>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
