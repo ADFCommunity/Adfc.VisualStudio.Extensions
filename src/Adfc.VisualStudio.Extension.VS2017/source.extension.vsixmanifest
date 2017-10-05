@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Adfc.VisualStudio.Extension.VS2017" Version="0.1.0" Language="en-US" Publisher="ADF Community" />
-        <DisplayName>ADF Community tooling for VS2017</DisplayName>
+        <Identity Id="Adfc.VisualStudio.Extension.VS2017" Version="0.1.1" Language="en-US" Publisher="ADF Community" />
+        <DisplayName>ADF Community Data Factory Tools for VS2017</DisplayName>
         <Description xml:space="preserve">WARNING: This version is early access and is missing functionality.
 This extension adds Azure Data Factory tooling to Visual Studio 2017, created by an open source community of Data Factory users.</Description>
         <MoreInfo>https://github.com/ADFCommunity/Home</MoreInfo>
