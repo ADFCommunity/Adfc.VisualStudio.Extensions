@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="110" xml:space="preserve">
-    <value>ADF Community tooling for VS2017</value>
+    <value>ADF Community Data Facoty Tools for VS2017</value>
   </data>
   <data name="112" xml:space="preserve">
     <value>This extension adds Azure Data Factory tooling to Visual Studio 2017, created by an open source community of Data Factory users.</value>
