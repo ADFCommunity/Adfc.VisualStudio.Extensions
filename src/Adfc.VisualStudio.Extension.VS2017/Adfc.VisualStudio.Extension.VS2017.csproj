@@ -240,7 +240,7 @@
     <VSIXSourceItem Include="ProjectSystem\Msbuild\**">
       <Visible>false</Visible>
       <InstallRoot>MSBuild</InstallRoot>
-      <VSIXSubPath>ADFCommunity\VS15\AdfcProj</VSIXSubPath>
+      <VSIXSubPath>ADFCommunity\VS15.0\AdfcProj</VSIXSubPath>
     </VSIXSourceItem>
   </ItemGroup>
   <ItemDefinitionGroup>
