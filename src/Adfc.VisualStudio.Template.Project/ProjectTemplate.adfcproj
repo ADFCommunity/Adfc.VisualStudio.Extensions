@@ -2,7 +2,7 @@
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <PropertyGroup>
-    <AdfcProjectImportPath>$(MSBuildExtensionsPath)\ADFCommunity\VS15\AdfcProj\</AdfcProjectImportPath>
+    <AdfcProjectImportPath>$(MSBuildExtensionsPath)\ADFCommunity\VS$(VisualStudioVersion)\AdfcProj\</AdfcProjectImportPath>
   </PropertyGroup>
   <Import Project="$(AdfcProjectImportPath)\adfcproj.props" Condition="Exists('$(AdfcProjectImportPath)\adfcproj.props')"/>
   <ItemGroup>
