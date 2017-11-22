@@ -5,7 +5,7 @@
    "type": "AzureBlob",
    "linkedServiceName": "AzureStorageLinkedService",
    "typeProperties": {
-     "folderPath": "output/",
+     "folderPath": "output/"
    },
    "external": true,
    "availability": {
