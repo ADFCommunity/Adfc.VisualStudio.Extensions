@@ -3,7 +3,7 @@
   <TemplateData>
     <Name>Dataset</Name>
     <Description>Empty Dataset</Description>
-    <Icon>Adfc.VisualStudio.Template.Json.ico</Icon>
+    <Icon>Json.ico</Icon>
     <TemplateID>Adfc.VisualStudio.Template.Items.Dataset</TemplateID>
     <ProjectType>Data Factory</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>

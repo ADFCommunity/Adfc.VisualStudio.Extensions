@@ -58,14 +58,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="file.json" />
-    <None Include="Adfc.VisualStudio.Template.Json.ico" />
+    <None Include="Json.ico" />
     <None Include="Pipeline.json" />
     <None Include="Config.json" />
     <None Include="Dataset.json" />
     <None Include="LinkedService.json" />
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="Adfc.VisualStudio.Template.Json.vstemplate" />
+    <VSTemplate Include="Json.vstemplate" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.VSSDK.BuildTools">

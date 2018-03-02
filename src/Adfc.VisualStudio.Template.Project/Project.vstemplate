@@ -3,7 +3,7 @@
   <TemplateData>
     <Name>Data Factory Project</Name>
     <Description>Create a new Data Factory project using ADF Community tools.</Description>
-    <Icon>Adfc.VisualStudio.Template.Project.ico</Icon>
+    <Icon>Project.ico</Icon>
     <ProjectType>Data Factory</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <SortOrder>1000</SortOrder>
