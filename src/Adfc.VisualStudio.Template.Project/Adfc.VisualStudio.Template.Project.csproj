@@ -59,10 +59,10 @@
   <ItemGroup>
     <None Include="Config.json" />
     <None Include="ProjectTemplate.adfcproj" />
-    <None Include="Adfc.VisualStudio.Template.Project.ico" />
+    <None Include="Project.ico" />
   </ItemGroup>
   <ItemGroup>
-    <VSTemplate Include="Adfc.VisualStudio.Template.Project.vstemplate" />
+    <VSTemplate Include="Project.vstemplate" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.VSSDK.BuildTools">

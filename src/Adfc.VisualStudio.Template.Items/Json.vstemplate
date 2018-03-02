@@ -3,7 +3,7 @@
   <TemplateData>
     <Name>JSON File</Name>
     <Description>Empty JSON file</Description>
-    <Icon>Adfc.VisualStudio.Template.Json.ico</Icon>
+    <Icon>Json.ico</Icon>
     <TemplateID>a3c624f6-da7d-4b2f-b221-9f04a43d8c75</TemplateID>
     <ProjectType>Data Factory</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
